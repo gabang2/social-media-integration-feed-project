@@ -6,6 +6,7 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -40,7 +41,6 @@ public class Post {
     private Integer shareCount;
 
     @Column(name = "created_at", updatable = false)
-    @CreatedDate
     private LocalDateTime createdAt;
 
     @Column(name = "updated_at")
@@ -64,4 +64,8 @@ public class Post {
         this.shareCount = shareCount;
     }
 
+    // == CreatedAt Set == //
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
 }

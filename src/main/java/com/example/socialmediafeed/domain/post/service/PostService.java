@@ -6,6 +6,7 @@ import com.example.socialmediafeed.domain.post.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -29,6 +30,7 @@ public class PostService {
                 .likeCount(0)
                 .shareCount(3)
                 .build();
+        postFBa.setCreatedAt(LocalDateTime.of(2023, 10, 29, 0, 0, 0));
 
         Post postFBb = Post.builder()
                 .contentId("fb2")
@@ -39,6 +41,7 @@ public class PostService {
                 .likeCount(10)
                 .shareCount(13)
                 .build();
+        postFBb.setCreatedAt(LocalDateTime.of(2023, 10, 29, 0, 50, 0));
 
         Post postFBc = Post.builder()
                 .contentId("fb3")
@@ -49,6 +52,8 @@ public class PostService {
                 .likeCount(77)
                 .shareCount(32)
                 .build();
+        postFBc.setCreatedAt(LocalDateTime.of(2023, 10, 29, 0, 55, 0));
+
 
         Post postFBd = Post.builder()
                 .contentId("fb4")
@@ -59,6 +64,8 @@ public class PostService {
                 .likeCount(0)
                 .shareCount(0)
                 .build();
+        postFBd.setCreatedAt(LocalDateTime.of(2023, 10, 29, 1, 0, 0));
+
 
         Post postFBe = Post.builder()
                 .contentId("fb2")
@@ -69,6 +76,8 @@ public class PostService {
                 .likeCount(155)
                 .shareCount(101)
                 .build();
+        postFBe.setCreatedAt(LocalDateTime.of(2023, 10, 29, 1, 30, 0));
+
 
         Post postTWa = Post.builder()
                 .contentId("tw1")
@@ -79,6 +88,8 @@ public class PostService {
                 .likeCount(30)
                 .shareCount(55)
                 .build();
+        postTWa.setCreatedAt(LocalDateTime.of(2023, 10, 29, 2, 30, 0));
+
 
         Post postTWb = Post.builder()
                 .contentId("tw2")
@@ -89,6 +100,7 @@ public class PostService {
                 .likeCount(103)
                 .shareCount(131)
                 .build();
+        postTWb.setCreatedAt(LocalDateTime.of(2023, 10, 30, 2, 30, 0));
 
         Post postTWc = Post.builder()
                 .contentId("tw3")
@@ -99,6 +111,7 @@ public class PostService {
                 .likeCount(7147)
                 .shareCount(3242)
                 .build();
+        postTWc.setCreatedAt(LocalDateTime.of(2023, 10, 31, 2, 30, 0));
 
         Post postTWd = Post.builder()
                 .contentId("tw4")
@@ -109,6 +122,8 @@ public class PostService {
                 .likeCount(2)
                 .shareCount(4)
                 .build();
+        postTWd.setCreatedAt(LocalDateTime.of(2023, 10, 31, 3, 30, 0));
+
 
         Post postTWe = Post.builder()
                 .contentId("tw5")
@@ -119,6 +134,7 @@ public class PostService {
                 .likeCount(135)
                 .shareCount(2)
                 .build();
+        postTWe.setCreatedAt(LocalDateTime.of(2023, 10, 31, 5, 30, 0));
 
         Post postIGa = Post.builder()
                 .contentId("ig1")
@@ -129,6 +145,8 @@ public class PostService {
                 .likeCount(3)
                 .shareCount(1)
                 .build();
+        postIGa.setCreatedAt(LocalDateTime.of(2023, 10, 31, 5, 30, 0));
+
 
         Post postIGb = Post.builder()
                 .contentId("ig2")
@@ -139,6 +157,8 @@ public class PostService {
                 .likeCount(190)
                 .shareCount(103)
                 .build();
+        postIGb.setCreatedAt(LocalDateTime.of(2023, 10, 25, 5, 30, 0));
+
 
         Post postIGc = Post.builder()
                 .contentId("ig3")
@@ -149,6 +169,7 @@ public class PostService {
                 .likeCount(222)
                 .shareCount(111)
                 .build();
+        postIGc.setCreatedAt(LocalDateTime.of(2023, 10, 26, 5, 30, 0));
 
         Post postIGd = Post.builder()
                 .contentId("ig4")
@@ -159,6 +180,7 @@ public class PostService {
                 .likeCount(0)
                 .shareCount(0)
                 .build();
+        postIGd.setCreatedAt(LocalDateTime.of(2023, 10, 27, 5, 30, 0));
 
         Post postIGe = Post.builder()
                 .contentId("ig5")
@@ -169,6 +191,7 @@ public class PostService {
                 .likeCount(155)
                 .shareCount(101)
                 .build();
+        postIGe.setCreatedAt(LocalDateTime.of(2023, 10, 28, 5, 30, 0));
 
         Post postTHa = Post.builder()
                 .contentId("th1")
@@ -179,6 +202,8 @@ public class PostService {
                 .likeCount(2)
                 .shareCount(1)
                 .build();
+        postTHa.setCreatedAt(LocalDateTime.of(2023, 10, 29, 5, 30, 0));
+
 
         Post postTHb = Post.builder()
                 .contentId("th2")
@@ -189,6 +214,7 @@ public class PostService {
                 .likeCount(1234)
                 .shareCount(123)
                 .build();
+        postTHb.setCreatedAt(LocalDateTime.of(2023, 10, 25, 5, 30, 0));
 
         Post postTHc = Post.builder()
                 .contentId("th3")
@@ -199,6 +225,7 @@ public class PostService {
                 .likeCount(2)
                 .shareCount(0)
                 .build();
+        postTHc.setCreatedAt(LocalDateTime.of(2023, 10, 25, 6, 30, 0));
 
         Post postTHd = Post.builder()
                 .contentId("th4")
@@ -209,6 +236,7 @@ public class PostService {
                 .likeCount(55)
                 .shareCount(43)
                 .build();
+        postTHd.setCreatedAt(LocalDateTime.of(2023, 10, 25, 7, 30, 0));
 
         Post postTHe = Post.builder()
                 .contentId("th5")
@@ -219,6 +247,8 @@ public class PostService {
                 .likeCount(3)
                 .shareCount(2)
                 .build();
+        postTHe.setCreatedAt(LocalDateTime.of(2023, 10, 25, 8, 30, 0));
+
 
         return postRepository.saveAll(List.of(
                 postFBa, postFBb, postFBc, postFBd, postFBe, postTWa, postTWb, postTWc, postTWd, postTWe,
